@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_hr_people" name="People" parent="hr.menu_hr_root" sequence="10"/>
+    <menuitem id="menu_hr_time" name="Time" parent="hr.menu_hr_root" sequence="20"/>
+    <menuitem id="menu_hr_payroll_expenses" name="Payroll &amp; Expenses" parent="hr.menu_hr_root" sequence="30"/>
+    <menuitem id="menu_hr_talent" name="Talent" parent="hr.menu_hr_root" sequence="40"/>
+    <menuitem id="menu_hr_documents_compliance" name="Documents &amp; Compliance" parent="hr.menu_hr_root" sequence="50"/>
+    <menuitem id="menu_hr_other" name="Other HR" parent="hr.menu_hr_root" sequence="90"/>
+</odoo>
+

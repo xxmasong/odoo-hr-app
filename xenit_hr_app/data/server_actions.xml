@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_rebuild_hr_app_menu" model="ir.actions.server">
+        <field name="name">Rebuild HR App Menu</field>
+        <field name="model_id" ref="base.model_ir_ui_menu"/>
+        <field name="state">code</field>
+        <field name="groups_id" eval="[(4, ref('base.group_system'))]"/>
+        <field name="code">action = env["xenit.hr.app.service"].rebuild_unified_hr_app()</field>
+    </record>
+
+    <menuitem
+        id="menu_rebuild_hr_app_menu"
+        name="Rebuild HR App Menu"
+        parent="hr.menu_human_resources_configuration"
+        action="action_rebuild_hr_app_menu"
+        groups="base.group_system"
+        sequence="999"
+    />
+</odoo>
+
